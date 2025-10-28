@@ -1,7 +1,14 @@
 import csv
 
-with open('data.csv', mode='w', newline='') as file:
+"""with open('data.csv', mode='w', newline='') as file:
     writer = csv.writer(file)
     writer.writerow(['Name', 'Age', 'City'])
     writer.writerow(['Alice', 30, 'New York'])
-    writer.writerow(['Bob', 25, 'Los Angeles'])
+    writer.writerow(['Bob', 25, 'Los Angeles'])"""
+
+
+#read the file to verify its contents
+with open('data.csv', mode='r') as file:
+    reader = csv.reader(file)
+    for row in reader:
+        print(reader)
